@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">customer_registration</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="dont_have_an_account">Dont have an Account?</string>
+    <string name="signup">SignUp</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="customer_registration">Customer Registration</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="pincode">Pincode</string>
+    <string name="contact">Contact No.</string>
+    <string name="attach">Attachment</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+</resources>

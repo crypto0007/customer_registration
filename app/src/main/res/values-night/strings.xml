@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact">Contact No.</string>
+    <string name="email">Email</string>
+    <string name="attach">Attachment</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+</resources>
