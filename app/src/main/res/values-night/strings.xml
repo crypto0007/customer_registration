@@ -5,4 +5,7 @@
     <string name="attach">Attachment</string>
     <string name="submit">Submit</string>
     <string name="cancel">Cancel</string>
+    <string name="customer_list">Customer List</string>
+    <string name="customer_type">Customer Type</string>
+    <string name="city">City</string>
 </resources>

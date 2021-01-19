@@ -2,6 +2,7 @@ package com.example.customer_registration;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -25,7 +26,6 @@ public class MainActivity extends AppCompatActivity  implements  AdapterView.OnI
     String[] custclass = {"Customer Class","NRI"};
     String[] state = {"Gujarat","Goa"};
     String[] city = {"Vadoadara","Gaya"};
-    AwesomeValidation av;
     EditText edtxcutnme, edtxAdd1, edtxAdd2, edtxpin, edtxcall, edtxemail, edtxattach;
     Spinner spinnercusttype, spinnercustclass, spinnerstate, spinnercity;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -35,6 +35,20 @@ public class MainActivity extends AppCompatActivity  implements  AdapterView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        init();
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+    }
+
+    void init(){
         spinnercusttype = findViewById(R.id.spinnercusttype);
         spinnercustclass = findViewById(R.id.spinnercustclass);
         spinnerstate = findViewById(R.id.spinnestate);
@@ -55,19 +69,11 @@ public class MainActivity extends AppCompatActivity  implements  AdapterView.OnI
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate();
+                //validate();
+                Intent in = new Intent(MainActivity.this,Search_Customer.class);
+                startActivity(in);
             }
         });
-
-    }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
     }
 
     void spinnerinit () {
@@ -93,13 +99,7 @@ public class MainActivity extends AppCompatActivity  implements  AdapterView.OnI
             spinnercity.setAdapter(spinnerct);
         }
 
-    public final static boolean ValidEmail(CharSequence target) {
-        if (TextUtils.isEmpty(target)) {
-            return false;
-        } else {
-            return android.util.Patterns.EMAIL_ADDRESS.matcher(target).matches();
-        }
-    }
+
 
     private void validate() {
         final String editcutnme = edtxcutnme.getText().toString();
