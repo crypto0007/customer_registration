@@ -1,6 +1,7 @@
 package com.example.customer_registration;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity  implements  AdapterView.OnI
     EditText edtxcutnme, edtxAdd1, edtxAdd2, edtxpin, edtxcall, edtxemail, edtxattach;
     Spinner spinnercusttype, spinnercustclass, spinnerstate, spinnercity;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,9 +71,7 @@ public class MainActivity extends AppCompatActivity  implements  AdapterView.OnI
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //validate();
-                Intent in = new Intent(MainActivity.this,Search_Customer.class);
-                startActivity(in);
+                validate();
             }
         });
     }
