@@ -35,7 +35,7 @@ public class Search_Customer extends AppCompatActivity {
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(Search_Customer.this,MainActivity.class);
+                Intent in = new Intent(Search_Customer.this,ServiceInformation.class);
                 startActivity(in);
             }
         });

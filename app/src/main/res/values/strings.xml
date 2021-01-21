@@ -22,4 +22,10 @@
     <string name="search">Search</string>
     <string name="customer_type">Customer Type</string>
     <string name="city">City</string>
+    <string name="add_product">Add New Product</string>
+    <string name="date">Date</string>
+    <string name="productmodel">Product Model</string>
+    <string name="productno">Product Number</string>
+    <string name="Time">Time</string>
+    <string name="requirement">Requirement</string>
 </resources>
