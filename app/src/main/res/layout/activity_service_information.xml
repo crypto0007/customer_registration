@@ -26,7 +26,14 @@
                 android:background="@color/yellow"
                 tools:ignore="MissingConstraints">
 
-
+                <ImageView
+                    android:id="@+id/backarrowsrvinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    />
 
                 <TextView
                     android:id="@+id/logo"
@@ -34,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/add_product"
+                    android:text="@string/Srvice_Info"
                     android:textColor="@color/black"
                     android:layout_gravity="center" />
             </LinearLayout>
@@ -65,7 +72,6 @@
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="@string/date"
-                android:inputType="textPersonName"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:paddingEnd="10dp"

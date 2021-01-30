@@ -1,7 +1,5 @@
 package com.example.customer_registration;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
@@ -11,9 +9,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -30,6 +31,8 @@ public class ServiceInformation extends AppCompatActivity implements AdapterView
     EditText editsrvdate, editsrvtime, editsrvrermnt;
 
     Button submit;
+
+    ImageView backarrowsrvinfoj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +52,16 @@ public class ServiceInformation extends AppCompatActivity implements AdapterView
         editsrvtime = (EditText) findViewById(R.id.etsrvtime);
         editsrvrermnt = (EditText) findViewById(R.id.etsrvreqmnnt);
         submit = findViewById(R.id.btnSubmint);
+        backarrowsrvinfoj = findViewById(R.id.backarrowsrvinfo);
 
         spinnerinit();
+
+        backarrowsrvinfoj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +75,7 @@ public class ServiceInformation extends AppCompatActivity implements AdapterView
 
         spinnersrvtp.setOnItemSelectedListener(this);
 
-        ArrayAdapter spinnersrvtpe = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listsrvtype);
+        ArrayAdapter spinnersrvtpe = new ArrayAdapter(this, R.layout.spinner_item, listsrvtype);
 
         spinnersrvtpe.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 

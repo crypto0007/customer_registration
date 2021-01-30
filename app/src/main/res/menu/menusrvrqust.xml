@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/srvall"
+        android:title="@string/service_allocation"
+        />
+
+    <item
+        android:id="@+id/srvreall"
+        android:title="@string/service_re_allocation"/>
+
+    <item
+        android:id="@+id/srvsd"
+        android:title="@string/service_schedule"/>
+
+    <item
+        android:id="@+id/srvresd"
+        android:title="@string/service_re_schedule"/>
+
+    <item
+        android:id="@+id/srvcomp"
+        android:title="@string/service_compltete"/>
+</menu>

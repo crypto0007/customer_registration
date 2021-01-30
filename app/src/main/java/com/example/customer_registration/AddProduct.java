@@ -1,9 +1,6 @@
 package com.example.customer_registration;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,9 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -29,6 +28,7 @@ public class AddProduct extends AppCompatActivity implements  AdapterView.OnItem
     Calendar cal;
     EditText editcal, editprtmodel, editprtno;
     Button submit;
+    ImageView backarrowaddprtj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,14 @@ public class AddProduct extends AppCompatActivity implements  AdapterView.OnItem
         editprtmodel = (EditText) findViewById(R.id.etprtmodel);
         editprtno = (EditText) findViewById(R.id.etprtno);
         submit = findViewById(R.id.btnSubmint);
+        backarrowaddprtj = findViewById(R.id.backarrowaddprt);
+
+        backarrowaddprtj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,8 +71,8 @@ public class AddProduct extends AppCompatActivity implements  AdapterView.OnItem
         spinnerprtcat.setOnItemSelectedListener(this);
         spinnerprtnam.setOnItemSelectedListener(this);
 
-        ArrayAdapter spinnerprtcatt = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listprtcat);
-        ArrayAdapter spinnerprtnamm = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listprtnam);
+        ArrayAdapter spinnerprtcatt = new ArrayAdapter(this,R.layout.spinner_item, listprtcat);
+        ArrayAdapter spinnerprtnamm = new ArrayAdapter(this, R.layout.spinner_item, listprtnam);
 
         spinnerprtcatt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerprtnamm.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

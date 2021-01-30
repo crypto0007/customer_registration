@@ -1,26 +1,27 @@
 package com.example.customer_registration;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class Search_Customer extends AppCompatActivity {
+
     private static RecyclerView.Adapter ad;
     private RecyclerView.LayoutManager lm;
     private static RecyclerView rv;
     private static ArrayList<DataMaodel> dm;
-    static View.OnClickListener mcl;
     FloatingActionButton fb;
+    ImageView backarrowacustlistj;
 
 
 
@@ -31,11 +32,19 @@ public class Search_Customer extends AppCompatActivity {
 
         rv = (RecyclerView) findViewById(R.id.my_recycler_view);
         fb = findViewById(R.id.fab);
+        backarrowacustlistj = findViewById(R.id.backarrowacustlist);
+
+        backarrowacustlistj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(Search_Customer.this,ServiceInformation.class);
+                Intent in = new Intent(Search_Customer.this, ServiceRequest.class);
                 startActivity(in);
             }
         });
