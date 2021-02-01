@@ -8,19 +8,6 @@
     android:orientation="vertical"
     >
 
-    <!--    <LinearLayout-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:orientation="horizontal">-->
-
-    <!--    <androidx.appcompat.widget.SearchView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        card_view:iconifiedByDefault="false"-->
-    <!--        android:background="@drawable/input_bg"-->
-    <!--        />-->
-    <!--</LinearLayout>-->
-
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardviewsrvrqust"
@@ -38,39 +25,23 @@
             android:orientation="vertical"
             tools:ignore="UselessParent">
 
-
-            <!--                android:id="@+id/srvrqstcon"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:orientation="horizontal"-->
-            <!--                android:layout_marginTop="10dp">-->
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/tvsrvrqustdate"
+                    android:id="@+id/tvsrvhisdate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/date"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="20dp"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="50dp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:src="@drawable/ic_more_vert_black_24dp" />
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/tvsrvrqustcust"
+                android:id="@+id/tvsrvhiscust"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -80,122 +51,74 @@
                 tools:ignore="MissingConstraints" />
 
 
-
             <TextView
-                android:id="@+id/tvsrvrqustcall"
+                android:id="@+id/tvsrvhisprtname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/contact"
+                android:text="@string/prtlitname"
                 android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-            <ru.embersoft.expandabletextview.ExpandableTextView
-                android:id="@+id/tvsrvrqustAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                card_view:etv_textContentColor="#8A000000"
-                card_view:etv_textStateColor="#8A000000"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                card_view:etv_animationTime="20"
-                card_view:etv_expandLines="1"
-                card_view:etv_showLine="false"
-                card_view:etv_textExpand="Show more"
-                card_view:etv_textShrink="Show less"
-                card_view:etv_textContentSize="15sp"/>
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/tempsrvrqustInvono"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:text="@string/tempinvoiceno"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvrqustInvono"
-                    card_view:layout_constraintHorizontal_bias="0.5"
-                    card_view:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tvsrvrqustInvono"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/invoiceno"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintHorizontal_bias="0.5"
-                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvrqustInvono"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="0dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/tempsrvrqustserlno"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:text="@string/tempserialno"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvrqustserlno"
-                    card_view:layout_constraintHorizontal_bias="0.5"
-                    card_view:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tvsrvrqustserlno"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/serialno"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintHorizontal_bias="0.5"
-                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvrqustserlno"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="0dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/tempsrvrqustserttype"
+                    android:id="@+id/tempsrvhisserttype"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:text="@string/tempsrvtype"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvrqustserttype"
+                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvhissrvtype"
                     card_view:layout_constraintHorizontal_bias="0.5"
                     card_view:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="0dp"
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/tvsrvrqustserttype"
+                    android:id="@+id/tvsrvhissrvtype"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/srvtype"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.5"
-                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvrqustserttype"
+                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvhisserttype"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tempsrvhisreqrmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/requirement"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvhisreqrmt"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tvsrvhisreqrmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/requirement"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvhisreqrmt"
                     tools:ignore="MissingConstraints"
                     tools:layout_editor_absoluteY="0dp" />
 
@@ -207,34 +130,130 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/tempsrvrqustsertstat"
+                    android:id="@+id/tempsrvhiscompdatetime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:text="@string/temprequststst"
+                    android:text="@string/completion_time_date"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvrqustsertstat"
+                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvhiscompdatetime"
                     card_view:layout_constraintHorizontal_bias="0.5"
                     card_view:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="0dp"
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/tvsrvrqustsertstat"
+                    android:id="@+id/tvsrvhiscompdatetime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/srvrequststst"
+                    android:text="@string/completion_time_date"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.5"
-                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvrqustsertstat"
+                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvhiscompdatetime"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tempsrvhistechname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/techname"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvhistechname"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tvsrvhistechname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/techname"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvhistechname"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tempsrvhicahrge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/srvchrg"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvhicahrge"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tvsrvhicahrge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/srvchrg"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvhicahrge"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tempsrvhisremrk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/srvhisremrk"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toStartOf="@+id/tvsrvhisremrk"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tvsrvhisremrk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/srvhisremrk"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.5"
+                    card_view:layout_constraintStart_toEndOf="@+id/tempsrvhisremrk"
                     tools:ignore="MissingConstraints"
                     tools:layout_editor_absoluteY="0dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
-                android:id="@+id/btnsrvrequstprtdtel"
+                android:id="@+id/btnsrvhisprtdtel"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"

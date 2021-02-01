@@ -297,9 +297,5 @@ public class CustomAdapterSrvRequst extends RecyclerView.Adapter<CustomAdapterSr
     public int getItemCount() {
         return dssr.size();
     }
-
-    void serachser() {
-    }
-
 }
 

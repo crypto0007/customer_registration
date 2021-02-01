@@ -73,4 +73,23 @@
     <string name="prtmodel">Product Model</string>
     <string name="Srvice_Info">Service Information</string>
     <string name="service_compltete">Service Complete</string>
+    <string name="Srvice">Service</string>
+    <string name="completion_time_date">Completion Date/ime</string>
+    <string name="techname">Technician Name</string>
+    <string name="srvchrg">Service Charge</string>
+    <string name="srvhisremrk">Service Remark</string>
+    <string name="qurysupport">Query Support</string>
+    <string name="des">Description</string>
+    <string name="send">Send</string>
+    <string name="title">Title</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="TAC">Terms and Conditions</string>
+    <string name="why">In an essay, article, or book, an introduction (also known as a prolegomenon) is a beginning section which states the purpose and goals of the following writing. This is generally followed by the body and conclusion.</string>
+    <string name="version">Version: </string>
+    <string name="ver">1.0.0</string>
+    <string name="viewhere">Terms and Conditions</string>
+    <string name="sublinetac">You can view the Terms and Conditions here</string>
+    <string name="viewt_amp_c"><![CDATA[View T&C]]></string>
+    <string name="view_pp">View Privacy policy</string>
+    <string name="sublinepp">You can view the Privacy Plolicy here</string>
 </resources>
