@@ -25,8 +25,12 @@
         <activity android:name=".Privacypolicy">
 
         </activity>
-        <activity android:name=".QuerySupport"></activity>
-        <activity android:name=".ServiceHistory"></activity>
+        <activity android:name=".QuerySupport">
+
+        </activity>
+        <activity android:name=".ServiceHistory">
+
+        </activity>
         <activity android:name=".ProductList" />
         <activity android:name=".Signature" />
         <activity android:name=".ServiceCompletion" />
